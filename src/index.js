@@ -1,2 +1,2 @@
 
-alert('useing wepack config script');
+alert('useing watch webpack config script');
