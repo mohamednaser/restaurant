@@ -52,30 +52,30 @@ li a:hover {
     rgb(0, 0, 0),
     rgba(168, 168, 168, 0.082)
   );
-  background: url(./../imgs/pasta.jpg);
+  background: url(./../imgs/cover.jpg);
   padding: 20px;
   background-size: cover;
 }
 
 /* Home containner */
-.home-container {
+#home-container {
   margin-top: 15%;
   /* display: none; */
   margin-bottom: 15%;
 }
-.home-container h1 {
+#home-container h1 {
   color: white;
   font-weight: 900;
   font-size: 3.2rem;
 }
-.home-container p {
+#home-container p {
   color: white;
   font-size: 20px;
   font-weight: 600;
 }
 
 /* menu div */
-.menu {
+#menu {
   display: none;
   border: 3px solid white;
   padding: 40px;

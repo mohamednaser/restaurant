@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("const homeTabButton = document.getElementById(\"home-tab\");\nconst menuTabButton = document.getElementById(\"menu-tab\");\nconst homeDiv = document.getElementById(\"home-container\");\nconst menuDiv = document.getElementById(\"menu\");\n\nhomeTabButton.addEventListener(\"click\", clickHomeTabButton);\nmenuTabButton.addEventListener(\"click\", clickMenuTabButton);\n\nfunction clickHomeTabButton() {\n  menuDiv.style.display = \"none\";\n  homeDiv.style.display = \"block\";\n}\n\nfunction clickMenuTabButton() {\n  homeDiv.style.display = \"none\";\n  menuDiv.style.display = \"block\";\n}\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 
