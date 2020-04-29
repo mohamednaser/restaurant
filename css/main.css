@@ -1,0 +1,109 @@
+.cover-img {
+  width: 100%;
+}
+
+.list-item {
+  font-weight: bolder;
+  color: wheat;
+  padding: 20px;
+  font-size: x-large;
+  margin-left: 5%;
+}
+
+.logo {
+  width: 35%;
+  font-size: xx-large;
+}
+
+.header-tabs {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111111;
+}
+
+.container {
+  background-image: linear-gradient(
+    60deg,
+    rgb(0, 0, 0),
+    rgba(168, 168, 168, 0.082)
+  );
+  background: url(./../imgs/pasta.jpg);
+  padding: 20px;
+  background-size: cover;
+}
+
+/* Home containner */
+.home-container {
+  margin-top: 15%;
+  /* display: none; */
+  margin-bottom: 15%;
+}
+.home-container h1 {
+  color: white;
+  font-weight: 900;
+  font-size: 3.2rem;
+}
+.home-container p {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* menu div */
+.menu {
+  display: none;
+  border: 3px solid white;
+  padding: 40px;
+  border-radius: 10px;
+  background: repeating-linear-gradient(
+    -120deg,
+    #2e2d2d52 5px,
+    rgba(110, 110, 110, 0.678) 8px,
+    rgb(51, 51, 51) 5px,
+    #5a59594f 6px
+  );
+}
+
+.meal-items {
+  color: white;
+}
+
+.meal-header {
+  color: white;
+  font-size: 30px;
+  border-bottom: 2px solid #999;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.meal-items {
+  font-size: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
+  justify-content: space-between;
+}
