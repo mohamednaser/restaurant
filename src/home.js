@@ -161,11 +161,13 @@ export function renderHomePage() {
 
 export function renderFooterPage() {
   const contentID = document.getElementById('content');
-  contentID.innerHTML += `  
-        <div class="footer">
-        <ul>
-            <li class="list-item">All rights reserved</li>
-        </ul>
-        </div>
-    `;
+  const footerDiv = document.createElement('div');
+  footerDiv.className = 'footer';
+  const footerlist = document.createElement('ul');
+  const rightReceived = document.createElement('li');
+  rightReceived.className = 'list-item';
+  rightReceived.innerText = 'All rights reserved';
+  footerlist.appendChild(rightReceived);
+  footerDiv.appendChild(footerlist);
+  contentID.appendChild(footerDiv);
 }
