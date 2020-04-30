@@ -27,8 +27,11 @@ export function renderHeader() {
 
 export function renderHomePage() {
   const contentID = document.getElementById('content');
-  contentID.innerHTML += `    <div class="container">
-  <div id="home-container">
+  const containerDiv = document.createElement('div');
+  containerDiv.className = 'container';
+
+  containerDiv.innerHTML += `   
+   <div id="home-container">
     <h1>Zacks's Restaurant</h1>
     <p>Eat, Drink</p>
     <p>- Be Merry</p>
@@ -155,8 +158,9 @@ export function renderHomePage() {
         <p>$ 10</p>
       </div>
     </div>
-  </div>
-</div>`;
+  </div> `;
+
+  contentID.appendChild(containerDiv);
 }
 
 export function renderFooterPage() {
