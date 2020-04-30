@@ -1,3 +1,9 @@
+import { renderHeader, renderHomePage, renderFooterPage } from './home';
+
+renderHeader();
+renderHomePage();
+renderFooterPage();
+
 const homeTabButton = document.getElementById('home-tab');
 const menuTabButton = document.getElementById('menu-tab');
 const homeDiv = document.getElementById('home-container');
