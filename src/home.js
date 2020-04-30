@@ -1,16 +1,28 @@
 export function renderHeader() {
   const contentID = document.getElementById('content');
-  contentID.innerHTML += `  
-                <div class="header">
-                <ul class="header-tabs">
-                <li class="logo">
-                    <a id="logo" href="#home"> Zacks </a>
-                </li>
-                <li class="list-item" id="home-tab">Home</li>
-                <li class="list-item" id="menu-tab">Menu</li>
-                </ul>
-            </div>
-      `;
+  const headerDiv = document.createElement('div');
+  headerDiv.className = 'header';
+  const headerTabs = document.createElement('ul');
+  headerTabs.className = 'header-tabs';
+  headerDiv.appendChild(headerTabs);
+  const logoItem = document.createElement('li');
+  logoItem.className = 'logo';
+  const logoLink = document.createElement('a');
+  logoItem.id = 'logo';
+  logoLink.innerText = 'Zacks';
+  const homeTab = document.createElement('li');
+  homeTab.className = 'list-item';
+  homeTab.id = 'home-tab';
+  homeTab.innerText = 'Home';
+  const menuTab = document.createElement('li');
+  menuTab.className = 'list-item';
+  menuTab.id = 'menu-tab';
+  menuTab.innerText = 'Menu';
+  logoItem.appendChild(logoLink);
+  headerTabs.appendChild(logoItem);
+  headerTabs.appendChild(homeTab);
+  headerTabs.appendChild(menuTab);
+  contentID.appendChild(headerDiv);
 }
 
 export function renderHomePage() {
