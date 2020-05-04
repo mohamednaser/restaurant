@@ -76,8 +76,7 @@ li a:hover {
 }
 
 /* menu div */
-#menu {
-  display: none;
+#menu , #contact-form{
   border: 3px solid white;
   padding: 40px;
   border-radius: 10px;
@@ -107,4 +106,13 @@ li a:hover {
   padding-right: 50px;
   display: flex;
   justify-content: space-between;
+}
+
+/* Contact Us Page */
+.contact-us {
+  color: #eec793;
+}
+
+.white-color{
+  color: white;
 }

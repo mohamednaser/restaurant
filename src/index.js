@@ -1,23 +1,35 @@
-import { renderHeader, renderHomePage, renderFooterPage } from './home';
+import {
+  renderHeader,
+  renderHomePage,
+  renderFooterPage,
+  initalizeContentClass,
+} from './home';
+import contact from './contact';
+import menu from './menu';
+
 
 renderHeader();
-renderHomePage();
+initalizeContentClass();
+const containerDiv = document.getElementById('container');
+containerDiv.innerHTML = renderHomePage();
 renderFooterPage();
 
 const homeTabButton = document.getElementById('home-tab');
 const menuTabButton = document.getElementById('menu-tab');
-const homeDiv = document.getElementById('home-container');
-const menuDiv = document.getElementById('menu');
+const contactTabButton = document.getElementById('contact-tab');
 
 function clickHomeTabButton() {
-  menuDiv.style.display = 'none';
-  homeDiv.style.display = 'block';
+  containerDiv.innerHTML = renderHomePage();
 }
 
 function clickMenuTabButton() {
-  homeDiv.style.display = 'none';
-  menuDiv.style.display = 'block';
+  containerDiv.innerHTML = menu();
+}
+
+function clickContactTabButton() {
+  containerDiv.innerHTML = contact();
 }
 
 homeTabButton.addEventListener('click', clickHomeTabButton);
 menuTabButton.addEventListener('click', clickMenuTabButton);
+contactTabButton.addEventListener('click', clickContactTabButton);
