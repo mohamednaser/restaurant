@@ -39,7 +39,6 @@ export function initalizeContentClass() {
 }
 
 export function renderHomePage() {
-
   return `   
    <div id="home-container">
     <h1>Zacks's Restaurant</h1>
